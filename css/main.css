@@ -101,7 +101,6 @@ img {
 
     .app-store-icon {
         grid-area: icon;
-        height: 100%;
     }
 
     .app-store-download {
