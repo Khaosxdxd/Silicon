@@ -368,8 +368,9 @@ img {
             .feature-features {
                 display: grid;
                 align-items: center;
-                justify-content: center;
-                grid-template-columns: 1fr;
+                grid-template-columns: auto 1fr;
+                grid-template-areas:    "icon title"
+                                        "icon paragragh";
 
                 @media (width >=768px) {
                     grid-template-columns: 1fr 1fr;
@@ -379,16 +380,19 @@ img {
                 }
 
                 .feature-small-title {
+                    grid-area: title;
                     font-size: 20px;
                     margin: 0;
                 }
 
                 .feature-small-paragraph {
-                    font-size: 16px;
+                    grid-area: paragraph;
+                    font-size: 1rem;
                     margin: 0;
                 }
 
                 .feature-icon {
+                    grid-area: icon;
                     margin: 0;
                     height: 60px;
                     width: 60px;
