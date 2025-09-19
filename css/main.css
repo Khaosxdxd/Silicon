@@ -272,7 +272,6 @@ img {
         margin-right: auto;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding: 1rem;
 
         .feature-area {
             display: grid;
@@ -288,6 +287,7 @@ img {
             }
             
             .feature-content {
+                width: 750px;
                 grid-area: title;
                 flex-direction: column;
                 color: var(--text-paragraph-color);
@@ -309,34 +309,64 @@ img {
                 
                 .feature-card-area {
                     display: grid;
-                    grid-template-columns: auto 1fr;
-                    grid-template-areas:    "icon title"
-                                            "icon paragraph"
+                    grid-template-columns: auto auto;
+                    grid-template-areas:    "payment data"
+                                            "cost support"
+                                            "cashback top"
                     ;
 
-                    .feature-card-icon {
-                        grid-area: icon;
-                        margin: 0;
-                        width: 3.75rem;
-                        height: 3.75rem;
-                    }
+                    .feature-card-content {
+                        width: 350px;
 
-                    .feature-card-text {
-
+                        .feature-card-icon {
+                            margin: 0;
+                            width: 3.75rem;
+                            height: 3.75rem;
+                        }
 
                         .feature-card-title {
-                            grid-area: title;
                             font-size: 1.25rem;
                             margin: 0;
+                            gap: 1rem;
                         }
                     
                         .feature-card-paragraph {
-                            grid-area: paragraph;
+                            width: 250px;
                             font-size: 1rem;
                             margin: 0;
                         }
                     }
+
+                    .payment {
+                        grid-area: payment;
+                        display: flex;
+                        
+                    }
+
+                    .data {
+                        grid-area: data;
+                        display: flex;
+                    }
                     
+                    .cost {
+                        grid-area: cost;
+                        display: flex;
+                    }
+
+                    .support {
+                        grid-area: support;
+                        display: flex;
+                    }
+
+                    .cashback {
+                        grid-area: cashback;
+                        display: flex;
+                    }
+
+                    .top {
+                        grid-area: top;
+                        display: flex;
+                    }
                 }                            
             }
         }
@@ -379,6 +409,58 @@ img {
                 .desc-paragraph {
                     font-size: 1rem;
                     width: 55dvh;
+                }
+            }
+        }
+    }
+}
+
+.app-features {
+    .app-features-container {
+        .app-features-area {
+            .upper-section {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .upper-text {
+                    .upper-title {
+                        font-size: 2rem;
+                        margin: 0;
+                    }
+
+                    .upper-list {
+                        font-size: 1rem;
+                        padding: 0 0 0 1rem;
+                    }
+
+                    .upper-button {
+                        width: 150px;
+                    }
+                }
+
+                .upper-image {
+                    height: 100%;
+                }
+            }
+
+            .lower-section {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .lower-image {
+                    height: 100%;
+                }
+
+                .lower-text {
+                    .lower-title {
+                        font-size: 2rem;
+                    }
+
+                    .lower-text {
+
+                    }
                 }
             }
         }
