@@ -265,17 +265,13 @@ img {
 }
 
 .features {
-    .feature-container {
-        width: 100%;
-        max-width: 1320px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
+    padding-bottom: 3rem;
 
+    .feature-container {
         .feature-area {
             display: grid;
-            gap: 2rem;
+            justify-content: space-between;
+            gap: 6rem;
             grid-template-columns: auto 1fr;
             grid-template-areas:    "image title"
                                     "image cards"
@@ -374,11 +370,11 @@ img {
 }
 
 .how-does-it-work {
+    background: #F3F6FF;
+
     .how-container {
     
         .how-area {
-            padding: 3rem 0 3rem 0;
-
             .how-title {
                 font-size: 2.5rem;
                 display: flex;
@@ -416,17 +412,21 @@ img {
 }
 
 .app-features {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     .app-features-container {
         .app-features-area {
+
             .upper-section {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 align-items: center;
 
                 .upper-text {
                     .upper-title {
                         font-size: 2rem;
                         margin: 0;
+                        width: 400px;
                     }
 
                     .upper-list {
@@ -454,14 +454,52 @@ img {
                 }
 
                 .lower-text {
-                    .lower-title {
+                    .lower-text-title {
                         font-size: 2rem;
+                        width: 450px;
                     }
 
-                    .lower-text {
+                    .app-features {
+                        display: flex;
+                        width: 500px;
+                        .app-features-icon {
+                            height: 60px;
+                            width: 60px;
+                        }
 
+                        .app-features-paragraph {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .lower-button {
+                        width: 150px;
                     }
                 }
+            }
+        }
+    }
+}
+
+.testimonials {
+    padding-top: 6rem;
+    background: #F3F6FF;
+    .testimonials-container {
+        .testimonials-area {
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+
+            .testimonials-text {
+                .testimonials-title {
+                    font-size: 2rem;
+                    width: 250px;
+
+                }
+            }
+
+            .testimonials-image {
+                height: 100%;
             }
         }
     }
