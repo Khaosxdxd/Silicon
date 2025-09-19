@@ -483,6 +483,7 @@ img {
 
 .testimonials {
     padding-top: 6rem;
+    padding-bottom: 6rem;
     background: #F3F6FF;
     .testimonials-container {
         .testimonials-area {
@@ -503,6 +504,92 @@ img {
             }
         }
     }
+}
+
+.faq {
+    padding-top: 6rem;
+    .faq-container {
+        .faq-area {
+            .faq-text {
+                .faq-title {
+                    font-size: 2rem;
+                    width: 400px;
+                    margin: 0;
+                    padding-bottom: 1rem;
+                }
+
+                .faq-paragraph {
+                    font-size: 1.1rem;
+                    width: 400px;
+                    margin: 0;
+                    padding-bottom: 2rem;
+                }
+            }
+
+            .faq-buttons {
+                display: flex;
+                gap: 2rem;
+
+                .call-button {
+                    border: 1px solid #E2E5F1;
+                    border-radius: 10px;
+                    padding: 1rem;
+
+
+                    display: flex;
+                    flex-direction: column;
+
+                    .call-icon {
+                        height: 28px;
+                        width: 28px;
+                    }
+
+                    .call-text {
+                        font-size: .8rem;
+                    }
+
+                    .call-link {
+                        font-size: .8rem;
+                        font-weight: 600;
+                        color: #6366F1;
+                    }
+                }
+
+                .message-button {
+                    border: 1px solid #E2E5F1;
+                    border-radius: 10px;
+                    padding: 1rem;
+
+                    display: flex;
+                    flex-direction: column;
+                    .message-icon {
+                        height: 28px;
+                        width: 28px;
+                    }
+
+                    .message-text {
+                        font-size: .8rem;
+
+                    }
+
+                    .message-link {
+                        font-size: .8rem;
+                        font-weight: 600;
+                        color: #22C55E;
+                    }
+                }
+            }
+
+            .accordian {
+                .accordion-button {
+                    
+                }
+            }
+        }
+
+
+    }
+
 }
 
 /* .header {
