@@ -508,6 +508,7 @@ img {
 
 .faq {
     padding-top: 6rem;
+    display: flex;
     .faq-container {
         .faq-area {
             .faq-text {
@@ -579,17 +580,36 @@ img {
                     }
                 }
             }
-
-            .accordian {
-                .accordion-button {
-                    
-                }
-            }
         }
+    }
+}
 
-
+.accordion-area {
+    .accordion {
+        font-size: 1rem;
+        background-color: #eee;
+        color: var(--text-headline-color);
+        cursor: pointer;
+        padding: 1.1rem;
+        width: 50%;
+        text-align: left;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        transition: 0.4s;
     }
 
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+    .panel {
+        padding: 0 1.1rem;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.2s ease-out;
+    }
 }
 
 /* .header {
