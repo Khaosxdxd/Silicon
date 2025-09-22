@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-    
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -44,7 +43,6 @@ html, body {
 h1,h2,h3,h4,h5,h6 {
     color: var(--text-headline-color);
 }
-
 
 a {
     font-size: 1rem;
@@ -508,8 +506,10 @@ img {
 
 .faq {
     padding-top: 6rem;
-    display: flex;
     .faq-container {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
         .faq-area {
             .faq-text {
                 .faq-title {
@@ -581,34 +581,97 @@ img {
                 }
             }
         }
+
+        .accordion-area {
+            
+            .accordion {
+                font-size: 1rem;
+                font-weight: 600;
+                background-color: #ffffff;
+                box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.205);
+                color: var(--text-headline-color);
+                cursor: pointer;
+                padding: 1.1rem;
+                margin-bottom: 1rem;
+                width: 100%;
+                text-align: left;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                transition: 0.4s;
+                
+            }
+
+            .active, .accordion:hover {
+                background-color: #dbdbdb;
+
+                
+            }
+
+            .panel {
+                padding: 0 1.1rem;
+                background-color: white;
+                max-height: 0;
+                display: none;
+                overflow: hidden;
+                transition: 0.2s ease-in-out;
+            }
+
+            .accordion:after {
+                content: "\02795";
+                font-size: 13px;
+                color: #777;
+                float: right;
+                margin-left: 5px;
+
+                .active:after {
+                content: "\2796";
+                }
+            }
+        }
     }
 }
 
-.accordion-area {
-    .accordion {
-        font-size: 1rem;
-        background-color: #eee;
-        color: var(--text-headline-color);
-        cursor: pointer;
-        padding: 1.1rem;
-        width: 50%;
-        text-align: left;
-        border: none;
-        border-radius: 10px;
-        outline: none;
-        transition: 0.4s;
-    }
+.subscribe {
+    .subscribe-container {
+        display: flex;
+        .subscribe-area {
+            
 
-    .active, .accordion:hover {
-        background-color: #ccc;
-    }
+            .subscribe-image {
+                height: 10%;
+            }
 
-    .panel {
-        padding: 0 1.1rem;
-        background-color: white;
-        max-height: 0;
-        overflow: hidden;
-        transition: 0.2s ease-out;
+            .sub-title {
+                font-size: 1.5rem;
+            }
+
+            .form {
+                font-size: 1rem;
+                height: 60px;
+                
+                .form-group {
+                    display: flex;
+                }
+
+                .label {
+                    font-size: 1em;
+                }
+
+                .input {
+                    font-size: 1em;
+                    padding: 8px;
+
+                    &::placeholder {
+                        color: #c6c6c6;
+                    }
+                }
+
+                .button {
+                    height: 50px;
+                }
+            }
+        }
     }
 }
 
