@@ -191,16 +191,16 @@ img {
 .hero {
     background: #ffffff;
     background: linear-gradient(178deg, rgba(255, 255, 255, 0.07) 0%, rgba(218, 70, 239, 0.05) 78%);
-    padding-top: 5rem;
+    padding-top: 6rem;
     
     .hero-container {
-        width: 100%;
+        /* width: 100%;
         max-width: 1320px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 1rem;
-        padding-right: 1rem;
-        padding: 1rem;
+        padding-right: 1rem; */
+
 
         display: grid;
         grid-template-columns: 1fr;
@@ -402,7 +402,7 @@ img {
 
                 .desc-paragraph {
                     font-size: 1rem;
-                    width: 55dvh;
+                    width: 600px;
                 }
             }
         }
@@ -509,12 +509,12 @@ img {
     .faq-container {
         display: flex;
         justify-content: center;
-        gap: 3rem;
+        gap: 6rem;
         .faq-area {
             .faq-text {
                 .faq-title {
                     font-size: 2rem;
-                    width: 400px;
+                    width: 340px;
                     margin: 0;
                     padding-bottom: 1rem;
                 }
@@ -583,12 +583,12 @@ img {
         }
 
         .accordion-area {
-            
+            padding-bottom: 6rem;
             .accordion {
                 font-size: 1rem;
                 font-weight: 600;
                 background-color: #ffffff;
-                box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.205);
+                box-shadow:  0 8px 5px rgba(0, 0, 0, 0.205);
                 color: var(--text-headline-color);
                 cursor: pointer;
                 padding: 1.1rem;
@@ -633,34 +633,56 @@ img {
 }
 
 .subscribe {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-wrap: wrap;
     .subscribe-container {
-        display: flex;
+        
         .subscribe-area {
-            
+            background-color: #F3F6FF;
+            max-width: 1300px;
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
 
             .subscribe-image {
-                height: 10%;
+                height: 60px;
+                width: 60px;
             }
 
             .sub-title {
                 font-size: 1.5rem;
+                width: 450px;
+                margin: 0;
             }
-
-            .form {
+            
+            .subscribe-form {
                 font-size: 1rem;
                 height: 60px;
-                
+            
+            
                 .form-group {
                     display: flex;
+                    justify-content: center;
+                    padding: 1rem;
                 }
 
                 .label {
                     font-size: 1em;
                 }
 
-                .input {
+                .input[type="text"] {
                     font-size: 1em;
-                    padding: 8px;
+                    padding: 10px;
+                    width: 250px;
 
                     &::placeholder {
                         color: #c6c6c6;
@@ -668,10 +690,25 @@ img {
                 }
 
                 .button {
-                    height: 50px;
+                    height: 40px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
                 }
             }
         }
+    }
+}
+
+.footer {
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer-text {  
+            font-size: .8rem;
+            color: var(--text-paragraph-color);
+        }
+        
     }
 }
 
