@@ -263,7 +263,7 @@ img {
 }
 
 .features {
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
 
     .feature-container {
         .feature-area {
@@ -704,6 +704,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 2rem;
         .footer-text {  
             font-size: .8rem;
             color: var(--text-paragraph-color);
